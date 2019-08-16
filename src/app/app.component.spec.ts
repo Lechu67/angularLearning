@@ -23,10 +23,10 @@ describe('AppComponent', () => {
   it(`should have as title 'angularMgr'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angularMgr');
+    expect(app.username).toEqual('angularMgr');
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should render username in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
