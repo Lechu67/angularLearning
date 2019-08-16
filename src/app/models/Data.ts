@@ -1,5 +1,5 @@
 export class Data {
   id: number;
-  username: string;
+  name: string;
   email: string;
 }

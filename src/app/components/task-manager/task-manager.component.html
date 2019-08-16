@@ -1,0 +1,15 @@
+<button (click)="run()">Start</button>
+
+Started at: {{today}}
+
+<div *ngIf="data">
+<h2>Some data</h2>
+<ul class="heroes">
+  <li *ngFor="let dataItem of data">
+    <span class="badge">{{dataItem.id}}</span> {{dataItem.name}} {{dataItem.email}}
+  </li>
+</ul>
+</div>
+<div *ngIf="startDate">
+Time spent in millis: {{calculateTime()}}
+</div>

@@ -16,6 +16,11 @@ export class DataComponent implements OnInit {
   }
 
   ngOnInit() {
+    // this.ajax.getData().subscribe(data => {
+    //   this.data = data;
+    // });
+  }
+  loadData() {
     this.ajax.getData().subscribe(data => {
       this.data = data;
     });

@@ -9,8 +9,8 @@ import {MessageService} from './message.service';
 })
 export class AjaxService {
 
-  serverUrl: string = 'https://jsonplaceholder.typicode.com/users';
-  limit: string = '?_limit=5';
+  serverUrl: string = 'https://jsonplaceholder.typicode.com/comments';
+  limit: string = '?_limit=500';
 
 
   constructor(private http: HttpClient, private messageService: MessageService) { }

@@ -3,7 +3,7 @@
   <li *ngFor="let dataItem of data"
       [class.selected]="dataItem === selectedData"
       (click)="onSelect(dataItem)">
-    <span class="badge">{{dataItem.id}}</span> {{dataItem.username}}
+    <span class="badge">{{dataItem.id}}</span> {{dataItem.name}} {{dataItem.email}}
   </li>
 </ul>
 <app-data-detail [dataDetails]="selectedData"></app-data-detail>

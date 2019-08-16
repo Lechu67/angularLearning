@@ -8,13 +8,19 @@ import {formatDate, Time} from '@angular/common';
 })
 export class DatePickerComponent implements OnInit {
 
+  startDate: Date;
   today: string;
   constructor() { }
 
   ngOnInit() {
   }
-  registerDate() {
+  registerDateOld() {
     console.log(this.today = (formatDate(new Date(), 'HH:MM:ss:SSS', 'en-UK', '0')));
+  }
+  registerDate(): Date {
+    this.startDate = new Date();
+    this.today = (formatDate(this.startDate, 'HH:MM:ss:SSS', 'en-UK', '0'));
+    return this.startDate;
   }
 
 }

@@ -9,6 +9,7 @@ import {DatePickerComponent} from './components/date-picker/date-picker.componen
 import { FormsModule } from '@angular/forms';
 import { DataDetailComponent } from './data-detail/data-detail.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import {TaskManagerComponent} from './components/task-manager/task-manager.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MessagesComponent } from './components/messages/messages.component';
     DatePickerComponent,
     DataComponent,
     DataDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    TaskManagerComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,9 @@ import { MessagesComponent } from './components/messages/messages.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    DatePickerComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
