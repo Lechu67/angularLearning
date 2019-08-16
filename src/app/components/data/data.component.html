@@ -1,0 +1,9 @@
+<h2>Some data</h2>
+<ul class="heroes">
+  <li *ngFor="let dataItem of data"
+      [class.selected]="dataItem === selectedData"
+      (click)="onSelect(dataItem)">
+    <span class="badge">{{dataItem.id}}</span> {{dataItem.username}}
+  </li>
+</ul>
+<app-data-detail [dataDetails]="selectedData"></app-data-detail>
